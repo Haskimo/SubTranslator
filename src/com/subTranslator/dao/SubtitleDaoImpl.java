@@ -41,7 +41,7 @@ public class SubtitleDaoImpl implements SubtitleDao {
 			duree = original = "";
 			
 			while ((line = br.readLine()) != null) {
-				if (line.matches("^\\d{1,3}$")) { // ligne numero de sous titre
+				if (line.matches("^\\d{1,5}$")) { // ligne numero de sous titre
 					id = Integer.parseInt(line);
 					id_ok = true;
 				} else if (id_ok && line.matches("^\\d{2,3}:\\d{2}:\\d{2},\\d{3} --> \\d{2,3}:\\d{2}:\\d{2},\\d{3}$")){ // ligne duree
