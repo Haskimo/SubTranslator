@@ -1,5 +1,9 @@
 SET NAMES latin1;
 
+# Creer une base "subtranslator"
+# Entrer "use subtranslator"
+# Puis :
+
 DROP TABLE IF EXISTS soustitres;
 
 CREATE TABLE soustitres (
